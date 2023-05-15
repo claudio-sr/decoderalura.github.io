@@ -1,0 +1,96 @@
+body {
+    margin: 20px;
+    display: block;
+}
+
+header {
+    margin: 20px;
+    display: inline;
+}
+
+main {
+    font-family: 'Inter', sans-serif;
+    margin-top: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 400px;
+    font-weight: 400px;
+    font-size: 20px;
+}
+
+.bt-criptografar {
+    width: 200px;
+    background-color: #0A3871;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 10px;
+}
+
+.bt-descriptografar {
+    width: 200px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.div-input {
+    height: 300px;
+    width: 600px;    
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    color: black;
+    text-align: center;
+    border: #0A3871 1px solid;
+    height: 70vh;
+
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 300px;
+    color: black;
+    border: #0A3871 1px solid;
+    height: 70vh;
+}
+
+.bt-copiar {
+    width: 200px;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.section3 > .bt-copiar {
+    margin: 10px auto;
+}
+
+.section3 > p {
+    margin: 0 auto;
+    padding: 5px;
+}
