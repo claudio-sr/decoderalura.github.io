@@ -1,10 +1,16 @@
 const inputArea = document.querySelector('.input');
-const textoDescri = document.querySelector('.texto-descrip');
+const textoDescri = document.querySelector('.area-texto');
 
 function btnEncriptar() {
     const texto = encriptar(inputArea.value);
     textoDescri.innerHTML = texto;
     inputArea.value = ""; 
+    mudarBackground();
+}
+
+function mudarBackground() {
+    let texto = document.getElementById('textoArea');
+    texto.style.background = '#fff';
 }
 
 function encriptar(textoEncriptado) {
@@ -38,3 +44,11 @@ function desencriptar(textoDesecriptado) {
 
     return textoDesecriptado;
 }
+
+let btnCopiar = document.querySelector('#btn-copiar');
+
+btnCopiar.addEventListener('click', function(e){
+    let areaCopiar = document.querySelector('#textoArea');
+    areaCopiar.select();
+    document.execCommand('copy');
+})

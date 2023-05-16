@@ -96,3 +96,11 @@ main {
 .bt-copiar:hover {
     background: #2964ac;
 }
+
+.area-texto {
+    background: url(img/imagem2.png);
+    background-repeat: no-repeat;
+    margin: 10px;
+    height: 100%;
+    border: none;
+}
