@@ -1,6 +1,7 @@
 body {
     margin: 20px;
     display: block;
+    background: white;
 }
 
 header {
@@ -15,7 +16,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    background: white;
 }
 
 .section1 {
@@ -39,6 +40,12 @@ main {
     margin-right: 10px;
 }
 
+.bt-criptografar:hover {
+    cursor: pointer;
+    background: #D8DFE8;
+    color: #0A3871;
+}
+
 .bt-descriptografar {
     width: 200px;
     background-color: #D8DFE8;
@@ -46,6 +53,12 @@ main {
     padding: 10px;
     border-radius: 10px;
     border: none;
+}
+
+.bt-descriptografar:hover {
+    cursor: pointer;
+    background: #0A3871;
+    color: #D8DFE8;
 }
 
 .div-input {
@@ -56,41 +69,30 @@ main {
 .section2 {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    width: 300px;
-    color: black;
-    text-align: center;
-    border: #0A3871 1px solid;
-    height: 70vh;
-
-}
-
-.section3 {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    width: 300px;
-    color: black;
+    width: 330px;
     border: #0A3871 1px solid;
     height: 70vh;
+    border-radius: 20px;
+}
+
+.texto-descrip {
+    color: #0A3871;
+    margin: 10px;
 }
 
 .bt-copiar {
     width: 200px;
-    background-color: #D8DFE8;
-    color: #0A3871;
+    background-color: #0A3871;
+    color: white;
     padding: 10px;
     border-radius: 10px;
     border: none;
-
+    margin: 0  auto 10px;
+    cursor: pointer;
 }
 
-.section3 > .bt-copiar {
-    margin: 10px auto;
-}
-
-.section3 > p {
-    margin: 0 auto;
-    padding: 5px;
+.bt-copiar:hover {
+    background: #2964ac;
 }
